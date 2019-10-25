@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CodeJam Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+  </head>
+
+  <body class="container">
+
+    <header class="header">
+      <i class="fas fa-align-justify"></i>
+      <h1 class="header__title">CodeJam Canvas</h1>
+    </header>
+
+    <main class="main">
+      <div class="">
+        <ul class="panel">
+          <li class="panel__item">
+            <i class="fas fa-fill-drip"></i>
+            <p class="panel__item__text">Paint bucket</p>
+          </li>
+          <li class="panel__item">
+            <i class="fas fa-eye-dropper" id="color_picker"></i>
+            <p class="panel__item__text">Choose color</p>
+          </li>
+          <li class="panel__item">
+            <i class="fas fa-arrows-alt"></i>
+            <p class="panel__item__text">Move</p>
+          </li>
+          <li class="panel__item">
+            <i class="fas fa-exchange-alt"></i>
+            <p class="panel__item__text">Transform</p>
+          </li>
+        </ul>
+        <ul class="panel">
+          <li class="panel__item">
+            <div class="panel__item__circle"></div>
+            <p class="panel__item__text">Current color</p>
+          </li>
+          <li class="panel__item">
+            <div class="panel__item__circle"></div>
+            <p class="panel__item__text">Prev color</p>
+          </li>
+          <li class="panel__item">
+            <div class="panel__item__circle circle-red"></div>
+            <p class="panel__item__text">Red</p>
+          </li>
+          <li class="panel__item">
+            <div class="panel__item__circle circle-blue"></div>
+            <p class="panel__item__text">Blue</p>
+          </li>
+        </ul>
+      </div>
+      <canvas id="canvas" width="300" height="300">
+
+      </canvas>
+      <div class="">
+        <!-- <ul class="panel">
+
+        </ul> -->
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
