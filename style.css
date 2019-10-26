@@ -39,9 +39,9 @@ body {
   display: flex;
   align-items: center;
   padding: 15px;
-  cursor: pointer;
 }
 .panel__item:hover {
+  cursor: pointer;
   background-color: #ad1fa6;
 }
 .panel__item__text {
@@ -61,8 +61,12 @@ body {
   background-color: blue;
 }
 .active {
+  color: white;
   background-color: #ad1fa6;
 }
 .canvas {
   margin: 30px;
+}
+.image {
+  display: none;
 }
