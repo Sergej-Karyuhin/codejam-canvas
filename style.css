@@ -60,3 +60,9 @@ body {
 .circle-blue {
   background-color: blue;
 }
+.active {
+  background-color: #ad1fa6;
+}
+.canvas {
+  margin: 30px;
+}
