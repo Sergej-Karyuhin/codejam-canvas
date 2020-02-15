@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CodeJam Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+  </head>
+
+  <body class="container">
+    <header class="header">
+      <i class="fas fa-bars"></i>
+      <h1 class="header__title">CodeJam Canvas</h1>
+    </header>
+
+    <main class="main">
+      <div>
+        <ul class="panel">
+          <li class="panel__item">
+            <i class="fas fa-fill-drip"></i>
+            <p class="panel__item__text">Paint bucket</p>
+          </li>
+          <li class="panel__item">
+            <i class="fas fa-eye-dropper"></i>
+            <p class="panel__item__text">Choose color</p>
+          </li>
+          <li class="panel__item">
+            <i class="fas fa-arrows-alt"></i>
+            <p class="panel__item__text">Move</p>
+          </li>
+          <li class="panel__item">
+            <i class="fas fa-exchange-alt"></i>
+            <p class="panel__item__text">Transform</p>
+          </li>
+        </ul>
+        <ul class="panel">
+          <li class="panel__item">
+            <div class="panel__item__circle"></div>
+            <p class="panel__item__text">Current color</p>
+          </li>
+          <li class="panel__item">
+            <div class="panel__item__circle"></div>
+            <p class="panel__item__text">Prev color</p>
+          </li>
+          <li class="panel__item">
+            <div class="panel__item__circle circle-red"></div>
+            <p class="panel__item__text">Red</p>
+          </li>
+          <li class="panel__item">
+            <div class="panel__item__circle circle-blue"></div>
+            <p class="panel__item__text">Blue</p>
+          </li>
+        </ul>
+      </div>
+
+      <canvas id="canvas" class="canvas" width="512" height="512"></canvas>
+
+      <ul class="panel">
+        <li class="panel__item canvas_current" id="canvas_4x4">
+          <p class="panel__item__text">4x4</p>
+        </li>
+        <li class="panel__item canvas_current" id="canvas_32x32">
+          <p class="panel__item__text">32x32</p>
+        </li>
+        <li class="panel__item canvas_current" id="canvas_img">
+          <p class="panel__item__text">Image</p>
+        </li>
+      </ul>
+    </main>
+
+    <img src="assets/RS School.png" alt="qqq" class="image" id="img">
+    <script src="script.js"></script>
+  </body>
+</html>
